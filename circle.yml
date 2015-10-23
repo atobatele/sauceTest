@@ -5,7 +5,7 @@ dependencies:
 
 test:
   override:
-    - cd sc-*-linux && ./bin/sc --user $SAUCE_USERNAME --api-key $SAUCE_ACCESS_KEY --readyfile ~/sauce_is_ready:
+    - cd sc-*-linux && ./bin/sc --user "kayode" --api-key "49582d86-2047-44fe-9f8a-48ba7af573fd" --readyfile ~/sauce_is_ready:
         background: true
     # Wait for tunnel to be ready
     - while [ ! -e ~/sauce_is_ready ]; do sleep 1; done
